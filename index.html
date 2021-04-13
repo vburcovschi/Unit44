@@ -139,13 +139,9 @@
             <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed d</p>
         </div>
         <form class="subscribe__form" action="" method="GET">
-            <input class="subscribe__input" type="email" name="email" placeholder="Email Address...">
+            <input class="subscribe__input" type="email" required name="subscribe_email" placeholder="Email Address...">
             <button class="subscribe__button" type="submit">Subscribe</button>
         </form>
-<!--         <div class="subscribe__form" action="" method="GET">
-            <div class="subscribe__input">Email Address...</div>
-            <a class="subscribe__button">Subscribe</a>
-        </div> -->
     </section>    
     <div class="feedback-contacts">
         <div class="feedback__left-box"></div>	
@@ -157,20 +153,12 @@
             </section>
             <form class="feedback__body" action="" method="GET">
                 <fieldset class="feedback__form">
-                    <input class="feedback__input feedback__name" type="text" name="fullname" placeholder="Name">
-                    <input class="feedback__input feedback__mail" type="email" name="email" placeholder="Your Mail">
-                    <textarea class="feedback__input feedback__message" id="textarea" name="message" placeholder="Type your message"></textarea>
+                    <input class="feedback__input feedback__name" type="text" required name="fullname" placeholder="Name">
+                    <input class="feedback__input feedback__mail" type="email" required name="email" placeholder="Your Mail">
+                    <textarea class="feedback__input feedback__message" id="textarea" required name="message" placeholder="Type your message"></textarea>
                     <button class="feedback__button" type="submit">Send message</button>
                 </fieldset>
             </form>
-            <!-- <section class="feedback__body">
-                <div class="feedback__form">
-                    <div class="feedback__input feedback__name">Name</div>
-                    <div class="feedback__input feedback__mail">Your Mail</div>
-                    <div class="feedback__input feedback__message">Type your message</div>
-                    <a class="feedback__button">Send message</a>
-                </div>
-            </section> -->
         </section>
         <section class="contacts">
             <h2 class="contacts__heading">Contact info</h2>
