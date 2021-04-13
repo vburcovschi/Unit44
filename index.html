@@ -36,7 +36,8 @@
 						<span class="intro__heading_style">organisation</span>
 					</h1>
 					<p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
-					<a class="contact-button contact-button-red" href="">Contact Us</a>
+					<button class="contact-button contact-button-red">Contact Us</button>
+                    <!-- <a class="contact-button contact-button-red" href="">Contact Us</a> -->
 				</div>
 				<a class="intro__image-link" href="">
 					<img class="about-img" src="img/office.jpg" alt="Office Foto" width="551" height="356">
@@ -137,10 +138,14 @@
             <h2 class="subscribe__heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
             <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed d</p>
         </div>
-        <div class="subscribe__form" action="" method="GET">
+        <form class="subscribe__form" action="" method="GET">
+            <input class="subscribe__input" type="email" name="email" placeholder="Email Address...">
+            <button class="subscribe__button" type="submit">Subscribe</button>
+        </form>
+<!--         <div class="subscribe__form" action="" method="GET">
             <div class="subscribe__input">Email Address...</div>
             <a class="subscribe__button">Subscribe</a>
-        </div>
+        </div> -->
     </section>    
     <div class="feedback-contacts">
         <div class="feedback__left-box"></div>	
@@ -150,14 +155,22 @@
                 <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
                 <hr class="header__line feedback__line">
             </section>
-            <section class="feedback__body">
+            <form class="feedback__body" action="" method="GET">
+                <fieldset class="feedback__form">
+                    <input class="feedback__input feedback__name" type="text" name="fullname" placeholder="Name">
+                    <input class="feedback__input feedback__mail" type="email" name="email" placeholder="Your Mail">
+                    <textarea class="feedback__input feedback__message" id="textarea" name="message" placeholder="Type your message"></textarea>
+                    <button class="feedback__button" type="submit">Send message</button>
+                </fieldset>
+            </form>
+            <!-- <section class="feedback__body">
                 <div class="feedback__form">
                     <div class="feedback__input feedback__name">Name</div>
                     <div class="feedback__input feedback__mail">Your Mail</div>
                     <div class="feedback__input feedback__message">Type your message</div>
                     <a class="feedback__button">Send message</a>
                 </div>
-            </section>
+            </section> -->
         </section>
         <section class="contacts">
             <h2 class="contacts__heading">Contact info</h2>
